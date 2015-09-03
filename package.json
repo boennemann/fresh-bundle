@@ -1,0 +1,28 @@
+{
+  "name": "fresh-bundle",
+  "description": "delete bundleDependencies from the node_modules folder, that are also dependencies from npm, so they can be freshly installed",
+  "bin": "index.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/boennemann/fresh-bundle.git"
+  },
+  "author": "Stephan Bönnemann <stephan@boennemann.me> (http://boennemann.me/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boennemann/fresh-bundle/issues"
+  },
+  "homepage": "https://github.com/boennemann/fresh-bundle#readme",
+  "devDependencies": {
+    "semantic-release": "^4.3.4",
+    "standard": "^5.2.1"
+  },
+  "dependencies": {
+    "require-relative": "^0.8.7",
+    "rimraf": "^2.4.3"
+  }
+}
